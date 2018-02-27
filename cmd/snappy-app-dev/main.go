@@ -75,6 +75,7 @@ func verifyDevPath(devpath string) (string, error) {
 	return devpath, nil
 }
 
+// FIXME: in the shell script, this is allowed to be empty
 func verifyMajorMinor(majmin string) (string, error) {
 	tmp := strings.Split(majmin, ":")
 	if len(tmp) != 2 {
